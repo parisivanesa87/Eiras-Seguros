@@ -44,20 +44,40 @@ body {
 	text-align: center;
 }
 
+.car {
+	background-color: #448AFF;  
+}
+
+.home {
+	background-color: #0288D1;
+}
+
+.work {
+	background-color: #BDBDBD;
+}
+
+.caucion {
+	background-color: #C5CAE9;
+}
+
+.life {
+	background-color: #B3E5FC;
+}
+
 .productos li i {
 	display: flex;
 	justify-content: center;
 }
 
 .contacto {
-	background-color: #b9cfe3;
+	background-color: #0277bd;
 	display: flex;
 	justify-content: space-around;
 }
 
 span {
 	font-weight: bold;
-	color: #6b6b6b;
+	color: #eceff1;
 }
 
 .ubicacion {
@@ -76,7 +96,7 @@ span {
 }
 
 .footer {
-	background-color: #239BA1;
+	background-color: #03A9F4;
 	height: 6em;
 }
 
