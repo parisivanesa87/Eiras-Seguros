@@ -1,0 +1,103 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+.menu li {
+	padding-right: 1em;
+}
+
+.menu a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.header {
+	background-image: url("../imgs/office_1.jpg");
+	height: 250px;
+}
+
+.productos ul {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	list-style-type: none;
+}
+
+.car, .home, .work, .caucion, .life {
+	border-style: solid;
+	height: 5em;
+	width: 8em;
+	border-radius: 1em;
+	margin: 1em;
+	padding-top: 1em;	
+	text-align: center;
+}
+
+.productos li i {
+	display: flex;
+	justify-content: center;
+}
+
+.contacto {
+	background-color: #b9cfe3;
+	display: flex;
+	justify-content: space-around;
+}
+
+span {
+	font-weight: bold;
+	color: #6b6b6b;
+}
+
+.ubicacion {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.map {
+	padding: 0.5em;
+}
+
+.legales {
+	display: flex;
+    align-items: center;
+}
+
+.footer {
+	background-color: #239BA1;
+	height: 6em;
+}
+
+.footer .copy {
+	display: flex;
+	justify-content: center;
+	padding: 0.5em;
+}
+
+.footer a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.footer ul {
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+}
