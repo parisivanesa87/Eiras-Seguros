@@ -1,0 +1,30 @@
+{
+  "name": "eirasseguros",
+  "version": "1.0.0",
+  "description": "sitio web eiras seguros",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parisivanesa87/Eiras-Seguros.git"
+  },
+  "keywords": [
+    "eiras",
+    "seguros",
+    "website"
+  ],
+  "author": "Vanesa Parisi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parisivanesa87/Eiras-Seguros/issues"
+  },
+  "homepage": "https://github.com/parisivanesa87/Eiras-Seguros#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  }
+}

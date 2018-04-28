@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+	background: #0288D1;
+}
+
+.header__menu {
+	width: 50%;	
+	display: flex;
+	justify-content: space-around;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.header__menu a {
+	background: #03A9F4;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 0.5em;
+	text-align: center;
+	flex-grow: 1;
+}
+.header__menu a:hover {
+	background: #B3E5FC;
+	color: #212121;
+}
+
+.foto {
+	background-image: url("../imgs/office.jpg");
+	height: 300px;
+	max-width: 1380px;
+	background-position: 50% 75%;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.intro {
+	padding: 4em 0;
+}
+
+.productos {
+	display: flex;
+	justify-content: center;
+	line-height: 2.5em;
+	position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.car, .home, .work, .caucion, .life, .various {
+	height: 5em;
+	width: 7em;
+	border-radius: 1em;
+	margin: 1em;
+	text-align: center;
+	text-decoration: none;
+	background-color: #90a4ae; 
+	
+}
+
+.car:hover, .home:hover, .work:hover, .caucion:hover, .life:hover, .various:hover {
+	background-color: #C5CAE9; 
+}
+
+.contacto {
+	background-color: #03A9F4;
+	display: flex;
+	justify-content: space-around;
+}
+
+span {
+	font-weight: bold;
+	color: #eceff1;
+}
+
+.ubicacion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 2em;
+}
+
+.map {
+	padding: 0.5em;
+}
+
+.legales {
+	display: flex;
+    align-items: center;
+}
+
+.footer {
+	background-color: #0288D1;
+	height: 6em;
+	padding: 0.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.footer a {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	cursor: pointer;
+}

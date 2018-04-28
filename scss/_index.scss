@@ -1,0 +1,38 @@
+.foto {
+	background-image: url("../imgs/office.jpg");
+	height: 300px;
+	max-width: 1380px;
+	background-position: 50% 75%;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.intro {
+	padding: $size * 4 0;
+}
+
+.productos {
+	display: flex;
+	justify-content: center;
+	line-height: $size * 2;
+	position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: $size * 18;
+}
+
+.car, .home, .work, .caucion, .life, .various {
+	height: $size * 5;
+	width: $size * 7;
+	border-radius: $size;
+	margin: $size;
+	text-align: center;
+	text-decoration: none;
+	background-color: $color-iconos; 
+	&:hover {
+		background-color: $color-iconos-hover; 
+	}
+}
