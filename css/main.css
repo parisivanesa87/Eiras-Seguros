@@ -13,7 +13,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
-	background: #01579b;
+	background: #1976D2;
 }
 
 .menu {
@@ -25,15 +25,16 @@ header {
 }
 
 .menu a {
-	background: #b3e5fc;
-	color: #90a4ae;
+	background: #2196F3;
+	color: #fff;
 	text-decoration: none;
 	padding: 0.5em;
 	text-align: center;
 	flex-grow: 1;
 }
 .menu a:hover {
-	background: #e0f7fa;
+	background: #BBDEFB;
+	color: #212121;
 }
 
 .foto {
