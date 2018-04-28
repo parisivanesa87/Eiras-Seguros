@@ -13,7 +13,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
-	background: #01579b;
+	background: #1976D2;
 }
 
 .menu {
@@ -25,29 +25,45 @@ header {
 }
 
 .menu a {
-	background: #b3e5fc;
-	color: #90a4ae;
+	background: #2196F3;
+	color: #fff;
 	text-decoration: none;
 	padding: 0.5em;
 	text-align: center;
 	flex-grow: 1;
 }
 .menu a:hover {
-	background: #e0f7fa;
+	background: #BBDEFB;
+	color: #212121;
 }
 
 .foto {
-	background-image: url("../imgs/office_1.jpg");
-	height: 250px;
+	background-image: url("../imgs/office.jpg");
+	height: 300px;
+	max-width: 1380px;
+	background-position: 50% 75%;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.intro {
+	padding: 4em 0;
 }
 
 .productos {
 	display: flex;
 	justify-content: center;
 	line-height: 2.5em;
+	position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
 }
 
-.car, .home, .work, .caucion, .life {
+.car, .home, .work, .caucion, .life, .various {
 	height: 5em;
 	width: 7em;
 	border-radius: 1em;
@@ -57,7 +73,7 @@ header {
 	background-color: #90a4ae; 
 }
 
-.car:hover, .home:hover, .work:hover, .caucion:hover, .life:hover {
+.car:hover, .home:hover, .work:hover, .caucion:hover, .life:hover, .various:hover {
 	background-color: #C5CAE9; 
 }
 
