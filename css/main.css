@@ -1,129 +1,141 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-}
+  font-family: "Open Sans", sans-serif; }
 
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-flow: row wrap;
-	background: #1976D2;
-}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  background: #0288D1; }
 
-.menu {
-	width: 50%;	
-	display: flex;
-	justify-content: space-around;
-	padding: 1em;
-	text-decoration: none;
-}
+.header__menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em; }
 
-.menu a {
-	background: #2196F3;
-	color: #fff;
-	text-decoration: none;
-	padding: 0.5em;
-	text-align: center;
-	flex-grow: 1;
-}
-.menu a:hover {
-	background: #BBDEFB;
-	color: #212121;
-}
-
-.foto {
-	background-image: url("../imgs/office.jpg");
-	height: 300px;
-	max-width: 1380px;
-	background-position: 50% 75%;
-}
+.header__menu a {
+  background: #03A9F4;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.5em;
+  text-align: center;
+  flex-grow: 1; }
+  .header__menu a:hover {
+    background: #B3E5FC;
+    color: #212121; }
 
 .subtitle {
-	text-align: center;
-}
-
-.intro {
-	padding: 4em 0;
-}
-
-.productos {
-	display: flex;
-	justify-content: center;
-	line-height: 2.5em;
-	position: absolute;
-    top: 45%;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-}
-
-.car, .home, .work, .caucion, .life, .various {
-	height: 5em;
-	width: 7em;
-	border-radius: 1em;
-	margin: 1em;
-	text-align: center;
-	text-decoration: none;
-	background-color: #90a4ae; 
-}
-
-.car:hover, .home:hover, .work:hover, .caucion:hover, .life:hover, .various:hover {
-	background-color: #C5CAE9; 
-}
-
-.intro {
-	padding-bottom: 1em;
-}
+  text-align: center; }
 
 .contacto {
-	background-color: #0277bd;
-	display: flex;
-	justify-content: space-around;
-}
+  background-color: #03A9F4;
+  display: flex;
+  justify-content: space-around; }
+
+.contacto__ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2em; }
+
+.contacto__map {
+  padding: 0.5em; }
+
+.contacto__legales {
+  display: flex;
+  align-items: center; }
 
 span {
-	font-weight: bold;
-	color: #eceff1;
-}
-
-.ubicacion {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	line-height: 2em;
-}
-
-.map {
-	padding: 0.5em;
-}
-
-.legales {
-	display: flex;
-    align-items: center;
-}
+  font-weight: bold;
+  color: #e3f2fd; }
 
 .footer {
-	background-color: #03A9F4;
-	height: 6em;
-}
+  background-color: #0288D1;
+  height: 6em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap; }
 
-.footer {
-	padding: 0.5em;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-flow: row wrap;
-}
+.footer__copy {
+  color: #FFFFFF; }
 
-.footer a {
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
-	cursor: pointer;
-}
+.foto {
+  background-image: url("../imgs/office.jpg");
+  height: 300px;
+  max-width: 1380px;
+  background-position: 50% 75%; }
+
+.subtitle {
+  text-align: center; }
+
+.intro {
+  padding: 4em 0; }
+
+.productos {
+  display: flex;
+  justify-content: center;
+  line-height: 2em;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center; }
+
+.productos__car, .productos__home, .productos__work, .productos__caucion, .productos__life, .productos__various {
+  height: 5em;
+  width: 7em;
+  border-radius: 1em;
+  margin: 1em;
+  text-align: center;
+  text-decoration: none;
+  background-color: #90a4ae; }
+  .productos__car:hover, .productos__home:hover, .productos__work:hover, .productos__caucion:hover, .productos__life:hover, .productos__various:hover {
+    background-color: #C5CAE9; }
+
+.producto {
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 2em;
+  justify-content: center; }
+  .producto a {
+    text-decoration: none; }
+
+.producto__car, .producto__home, .producto__work, .producto__caucion, .producto__life, .producto__various {
+  width: 20em;
+  border-radius: 1em;
+  margin: 1em;
+  text-align: center;
+  padding: 1em;
+  background-color: #90a4ae; }
+  .producto__car:hover, .producto__home:hover, .producto__work:hover, .producto__caucion:hover, .producto__life:hover, .producto__various:hover {
+    background-color: #C5CAE9; }
+
+.datosutiles {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  width: 100%; }
+
+.allianz__logo {
+  width: auto; }
+  .allianz__logo:hover {
+    filter: grayscale(100%); }
+
+.allianz_title {
+  text-align: 1em; }
+
+.fedpatronal__logo:hover {
+  filter: grayscale(100%); }
+
+.SMG__logo:hover {
+  filter: grayscale(100%); }
+
+.asociart__logo:hover {
+  filter: grayscale(100%); }

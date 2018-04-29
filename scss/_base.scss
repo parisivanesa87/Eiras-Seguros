@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+	background: $primary-color-dark;
+}
+
+.header__menu {
+	width: 50%;	
+	display: flex;
+	justify-content: space-around;
+	padding: $size;
+}
+
+.header__menu a {
+	background: $primary-color;
+	color: $primary-color-text;
+	text-decoration: none;
+	padding: $size / 2;
+	text-align: center;
+	flex-grow: 1;
+	&:hover {
+		background: $primary-color-light;
+		color: $primary-text-color;
+	}
+}
+
+.subtitle {
+	text-align: center;
+
+}
+.contacto {
+	background-color: $primary-color;
+	display: flex;
+	justify-content: space-around;
+}
+
+.contacto__ubicacion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: $size * 2;
+}
+
+.contacto__map {
+	padding: $size / 2;
+}
+.contacto__legales {
+	display: flex;
+    align-items: center;
+}
+
+span {
+	font-weight: bold;
+	color: $color-contacto;
+}
+
+.footer {
+	background-color: $primary-color-dark;
+	height: $size * 6;
+	padding: $size / 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.footer__copy {
+	color: #FFFFFF;
+}
