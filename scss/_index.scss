@@ -21,10 +21,9 @@
     top: 45%;
     width: 100%;
     text-align: center;
-    font-size: $size * 18;
 }
 
-.car, .home, .work, .caucion, .life, .various {
+.productos__car, .productos__home, .productos__work, .productos__caucion, .productos__life, .productos__various {
 	height: $size * 5;
 	width: $size * 7;
 	border-radius: $size;

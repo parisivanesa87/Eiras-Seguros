@@ -30,21 +30,24 @@ body {
     background: #B3E5FC;
     color: #212121; }
 
+.subtitle {
+  text-align: center; }
+
 .contacto {
   background-color: #03A9F4;
   display: flex;
   justify-content: space-around; }
 
-.ubicacion {
+.contacto__ubicacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   line-height: 2em; }
 
-.map {
+.contacto__map {
   padding: 0.5em; }
 
-.legales {
+.contacto__legales {
   display: flex;
   align-items: center; }
 
@@ -60,6 +63,9 @@ span {
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap; }
+
+.footer__copy {
+  color: #FFFFFF; }
 
 .foto {
   background-image: url("../imgs/office.jpg");
@@ -80,10 +86,9 @@ span {
   position: absolute;
   top: 45%;
   width: 100%;
-  text-align: center;
-  font-size: 18em; }
+  text-align: center; }
 
-.car, .home, .work, .caucion, .life, .various {
+.productos__car, .productos__home, .productos__work, .productos__caucion, .productos__life, .productos__various {
   height: 5em;
   width: 7em;
   border-radius: 1em;
@@ -91,5 +96,46 @@ span {
   text-align: center;
   text-decoration: none;
   background-color: #90a4ae; }
-  .car:hover, .home:hover, .work:hover, .caucion:hover, .life:hover, .various:hover {
+  .productos__car:hover, .productos__home:hover, .productos__work:hover, .productos__caucion:hover, .productos__life:hover, .productos__various:hover {
     background-color: #C5CAE9; }
+
+.producto {
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 2em;
+  justify-content: center; }
+  .producto a {
+    text-decoration: none; }
+
+.producto__car, .producto__home, .producto__work, .producto__caucion, .producto__life, .producto__various {
+  width: 20em;
+  border-radius: 1em;
+  margin: 1em;
+  text-align: center;
+  padding: 1em;
+  background-color: #90a4ae; }
+  .producto__car:hover, .producto__home:hover, .producto__work:hover, .producto__caucion:hover, .producto__life:hover, .producto__various:hover {
+    background-color: #C5CAE9; }
+
+.datosutiles {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  width: 100%; }
+
+.allianz__logo {
+  width: auto; }
+  .allianz__logo:hover {
+    filter: grayscale(100%); }
+
+.allianz_title {
+  text-align: 1em; }
+
+.fedpatronal__logo:hover {
+  filter: grayscale(100%); }
+
+.SMG__logo:hover {
+  filter: grayscale(100%); }
+
+.asociart__logo:hover {
+  filter: grayscale(100%); }

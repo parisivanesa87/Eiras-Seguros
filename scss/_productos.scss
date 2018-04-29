@@ -1,0 +1,24 @@
+.producto {
+	display: flex;
+	flex-flow: row wrap;
+	line-height: $size * 2;
+	justify-content: center;
+	& a {
+		text-decoration: none;
+	}
+
+}
+
+.producto__car, .producto__home, .producto__work, .producto__caucion, .producto__life, .producto__various {
+	width: $size * 20;
+	border-radius: $size;
+	margin: $size;
+	text-align: center;
+	padding: $size;
+	background-color: $color-iconos; 
+
+	&:hover {
+		background-color: $color-iconos-hover; 
+	}
+
+}

@@ -36,35 +36,35 @@ body {
 	}
 }
 
+.subtitle {
+	text-align: center;
+
+}
 .contacto {
 	background-color: $primary-color;
 	display: flex;
 	justify-content: space-around;
 }
 
-.ubicacion {
+.contacto__ubicacion {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	line-height: $size * 2;
 }
 
-.map {
+.contacto__map {
 	padding: $size / 2;
 }
-.legales {
+.contacto__legales {
 	display: flex;
     align-items: center;
 }
-
 
 span {
 	font-weight: bold;
 	color: $color-contacto;
 }
-
-
-
 
 .footer {
 	background-color: $primary-color-dark;
@@ -74,4 +74,8 @@ span {
 	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
+}
+
+.footer__copy {
+	color: #FFFFFF;
 }
