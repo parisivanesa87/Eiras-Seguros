@@ -1,0 +1,16 @@
+.pasos {
+	padding: $size;
+
+}
+
+.pasos__bold {
+	font-weight: bold;
+	color: $primary-color-dark;
+}
+
+.pasos__listado {
+	padding-left: $size * 2;
+	list-style-type:lower-latin;
+}
+
+

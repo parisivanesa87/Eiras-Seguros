@@ -8,12 +8,23 @@ body {
 	font-family: $font;
 }
 
+p {
+	padding: $size / 2;
+
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
 	background: $primary-color-dark;
+}
+
+.foto {
+	background-image: url("../imgs/office.jpg");
+	height: $size * 20;
+	background-size: cover;
 }
 
 .header__menu {
@@ -37,9 +48,11 @@ body {
 }
 
 .subtitle {
+	padding: $size / 2;
 	text-align: center;
 
 }
+
 .contacto {
 	background-color: $primary-color;
 	display: flex;
@@ -61,7 +74,7 @@ body {
     align-items: center;
 }
 
-span {
+.bold__contacto {
 	font-weight: bold;
 	color: $color-contacto;
 }

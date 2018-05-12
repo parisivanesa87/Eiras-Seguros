@@ -6,12 +6,20 @@
 body {
   font-family: "Open Sans", sans-serif; }
 
+p {
+  padding: 0.5em; }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   background: #0288D1; }
+
+.foto {
+  background-image: url("../imgs/office.jpg");
+  height: 20em;
+  background-size: cover; }
 
 .header__menu {
   width: 50%;
@@ -31,6 +39,7 @@ body {
     color: #212121; }
 
 .subtitle {
+  padding: 0.5em;
   text-align: center; }
 
 .contacto {
@@ -51,7 +60,7 @@ body {
   display: flex;
   align-items: center; }
 
-span {
+.bold__contacto {
   font-weight: bold;
   color: #e3f2fd; }
 
@@ -67,11 +76,9 @@ span {
 .footer__copy {
   color: #FFFFFF; }
 
-.foto {
-  background-image: url("../imgs/office.jpg");
-  height: 300px;
-  max-width: 1380px;
-  background-position: 50% 75%; }
+.foto__productos {
+  display: flex;
+  align-items: flex-end; }
 
 .subtitle {
   text-align: center; }
@@ -83,10 +90,9 @@ span {
   display: flex;
   justify-content: center;
   line-height: 2em;
-  position: absolute;
-  top: 45%;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: -4em; }
 
 .productos__car, .productos__home, .productos__work, .productos__caucion, .productos__life, .productos__various {
   height: 5em;
@@ -118,18 +124,25 @@ span {
     background-color: #C5CAE9; }
 
 .datosutiles {
+  width: 100%;
   display: flex;
+  padding: 1em; }
+
+.datosutiles__companias {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-flow: column wrap;
-  width: 100%; }
+  align-items: center;
+  width: 50%; }
 
-.allianz__logo {
-  width: auto; }
-  .allianz__logo:hover {
-    filter: grayscale(100%); }
+.allianz, .fedpatronal, .SMG, .asociart {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.allianz_title {
-  text-align: 1em; }
+.allianz__logo:hover {
+  filter: grayscale(100%); }
 
 .fedpatronal__logo:hover {
   filter: grayscale(100%); }
@@ -139,3 +152,71 @@ span {
 
 .asociart__logo:hover {
   filter: grayscale(100%); }
+
+.contactanos {
+  width: 50%;
+  background-color: rgba(3, 169, 244, 0.4); }
+
+.contactanos__texto {
+  margin: 1em; }
+  .contactanos__texto a {
+    margin: 0.5em; }
+
+.pasos {
+  padding: 1em; }
+
+.pasos__bold {
+  font-weight: bold;
+  color: #0288D1; }
+
+.pasos__listado {
+  padding-left: 2em;
+  list-style-type: lower-latin; }
+
+.contactar {
+  width: 100%;
+  display: flex;
+  flex-direction: space-between;
+  padding: 1em; }
+
+.contactar__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.contactar__info_bold {
+  color: #0288D1;
+  font-weight: bold; }
+
+.formulario {
+  width: 50%;
+  background-color: rgba(3, 169, 244, 0.4); }
+
+form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto; }
+
+.name_lastname, .email, .motivos {
+  height: 3em;
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 1em; }
+
+.caja_comentarios {
+  height: 10em;
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 1em; }
+
+.botones {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1em; }
+  .botones input {
+    margin: 0 1em; }
