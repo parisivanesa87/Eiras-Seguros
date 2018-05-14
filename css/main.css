@@ -4,48 +4,54 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 p {
-  padding: 0.5em; }
+  color: #999999; }
 
 .header {
+  padding: 1em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-flow: row wrap;
-  background: #0288D1; }
+  background: #FFFFFF; }
+
+.header__logo {
+  height: 45px; }
+
+.header__menu {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 1em; }
+  .header__menu a {
+    padding: 1em;
+    color: #0d2560;
+    text-decoration: none; }
+    .header__menu a:hover {
+      padding-bottom: 1.8em;
+      border-bottom: solid 4px #792560; }
+
+.header__menu_prodinterno {
+  list-style: none; }
 
 .foto {
-  background-image: url("../imgs/office.jpg");
+  background-image: url("../imgs/institucional.jpg");
   height: 20em;
   background-size: cover; }
 
-.header__menu {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  padding: 1em; }
-
-.header__menu a {
-  background: #03A9F4;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 0.5em;
-  text-align: center;
-  flex-grow: 1; }
-  .header__menu a:hover {
-    background: #B3E5FC;
-    color: #212121; }
-
 .subtitle {
-  padding: 0.5em;
-  text-align: center; }
+  padding-bottom: 0.5em;
+  font-size: 1.5em; }
 
 .contacto {
-  background-color: #03A9F4;
+  background-color: #EEEEEE;
   display: flex;
   justify-content: space-around; }
+
+.direccion, .telefono, .correo {
+  color: #333333; }
 
 .contacto__ubicacion {
   display: flex;
@@ -60,12 +66,11 @@ p {
   display: flex;
   align-items: center; }
 
-.bold__contacto {
-  font-weight: bold;
-  color: #e3f2fd; }
+.contacto__email {
+  text-decoration: none; }
 
 .footer {
-  background-color: #0288D1;
+  background-color: #FFFFFF;
   height: 6em;
   padding: 0.5em;
   display: flex;
@@ -74,36 +79,72 @@ p {
   flex-flow: row wrap; }
 
 .footer__copy {
-  color: #FFFFFF; }
+  color: #0d2560; }
+
+.footer__copy_vermas {
+  font-size: 14px;
+  border: 2px solid #792560;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-right: 2em; }
+  .footer__copy_vermas:hover {
+    background-color: #792560; }
+
+.footer__copy_vermas a {
+  text-decoration: none; }
+  .footer__copy_vermas a:hover {
+    color: #FFFFFF; }
 
 .foto__productos {
   display: flex;
   align-items: flex-end; }
 
-.subtitle {
-  text-align: center; }
+.container {
+  padding: 4em;
+  width: 100%;
+  display: flex; }
 
-.intro {
-  padding: 4em 0; }
+.nosotros {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 1em; }
 
-.productos {
+.clientes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 1em; }
+
+.prod {
   display: flex;
   justify-content: center;
-  line-height: 2em;
+  line-height: 4em;
   width: 100%;
-  text-align: center;
-  margin-bottom: -4em; }
+  margin-bottom: -5em; }
+  .prod :hover {
+    background-color: #792560;
+    color: #FFFFFF; }
 
-.productos__car, .productos__home, .productos__work, .productos__caucion, .productos__life, .productos__various {
-  height: 5em;
-  width: 7em;
-  border-radius: 1em;
+.icono {
+  font-size: 2em;
+  text-align: center;
+  color: #792560; }
+  .icono :hover {
+    color: #FFFFFF; }
+
+.prod__car, .prod__home, .prod__work, .prod__caucion, .prod__life, .prod__various {
+  height: 9em;
+  width: 9em;
   margin: 1em;
   text-align: center;
-  text-decoration: none;
-  background-color: #90a4ae; }
-  .productos__car:hover, .productos__home:hover, .productos__work:hover, .productos__caucion:hover, .productos__life:hover, .productos__various:hover {
-    background-color: #C5CAE9; }
+  background-color: #FFFFFF;
+  border-top: solid 4px #792560; }
+
+.prod__links {
+  text-decoration: none; }
+  .prod__links :hover {
+    color: #FFFFFF; }
 
 .producto {
   display: flex;
@@ -155,7 +196,7 @@ p {
 
 .contactanos {
   width: 50%;
-  background-color: rgba(3, 169, 244, 0.4); }
+  background-color: #EEEEEE; }
 
 .contactanos__texto {
   margin: 1em; }
@@ -177,7 +218,8 @@ p {
   width: 100%;
   display: flex;
   flex-direction: space-between;
-  padding: 1em; }
+  padding: 1em;
+  background-color: #EEEEEE; }
 
 .contactar__info {
   width: 50%;
@@ -190,8 +232,7 @@ p {
   font-weight: bold; }
 
 .formulario {
-  width: 50%;
-  background-color: rgba(3, 169, 244, 0.4); }
+  width: 50%; }
 
 form {
   display: flex;
