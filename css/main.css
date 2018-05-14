@@ -34,7 +34,8 @@ p {
       border-bottom: solid 4px #792560; }
 
 .header__menu_prodinterno {
-  list-style: none; }
+  list-style: none;
+  margin: 0.5em; }
 
 .foto {
   background-image: url("../imgs/institucional.jpg");
@@ -81,18 +82,18 @@ p {
 .footer__copy {
   color: #0d2560; }
 
-.footer__copy_vermas {
+.footer__copy_volver {
   font-size: 14px;
   border: 2px solid #792560;
   border-radius: 0.5em;
   padding: 1em;
   margin-right: 2em; }
-  .footer__copy_vermas:hover {
+  .footer__copy_volver:hover {
     background-color: #792560; }
 
-.footer__copy_vermas a {
+.footer__copy_volver a {
   text-decoration: none; }
-  .footer__copy_vermas a:hover {
+  .footer__copy_volver a:hover {
     color: #FFFFFF; }
 
 .foto__productos {
@@ -167,20 +168,19 @@ p {
 .datosutiles {
   width: 100%;
   display: flex;
-  padding: 1em; }
+  padding: 3em; }
 
-.datosutiles__companias {
+.datosutiles__telefonos {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 50%; }
 
 .allianz, .fedpatronal, .SMG, .asociart {
-  padding: 1em;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row;
+  align-items: center;
+  line-height: 1.5em;
+  padding-left: 1em; }
 
 .allianz__logo:hover {
   filter: grayscale(100%); }
@@ -191,17 +191,21 @@ p {
 .SMG__logo:hover {
   filter: grayscale(100%); }
 
+.titulos {
+  padding: 1em; }
+
 .asociart__logo:hover {
   filter: grayscale(100%); }
 
 .contactanos {
   width: 50%;
+  height: 12em;
   background-color: #EEEEEE; }
 
 .contactanos__texto {
   margin: 1em; }
-  .contactanos__texto a {
-    margin: 0.5em; }
+  .contactanos__texto p {
+    color: #000; }
 
 .pasos {
   padding: 1em; }
@@ -231,33 +235,34 @@ p {
   color: #0288D1;
   font-weight: bold; }
 
-.formulario {
-  width: 50%; }
-
-form {
+.form {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 50%;
-  margin: 0 auto; }
+  flex-direction: column; }
 
-.name_lastname, .email, .motivos {
-  height: 3em;
-  padding: 1em;
-  border-radius: 1em;
-  margin-bottom: 1em; }
-
-.caja_comentarios {
-  height: 10em;
-  padding: 1em;
-  border-radius: 1em;
-  margin-bottom: 1em; }
-
-.botones {
-  display: flex;
-  justify-content: center;
+.form_persona {
   width: 100%;
-  margin-bottom: 1em; }
-  .botones input {
-    margin: 0 1em; }
+  background-color: #EEEEEE;
+  border: 2px solid #792560;
+  color: #0d2560; }
+
+.form_email {
+  width: 100%;
+  background-color: #EEEEEE;
+  border: 2px solid #792560;
+  color: #0d2560; }
+
+.form_asunto {
+  width: 100%;
+  background-color: #EEEEEE;
+  border: 2px solid #792560;
+  color: #0d2560; }
+
+.boton input {
+  color: #0d2560;
+  font-size: 1em;
+  border: 2px solid #792560;
+  border-radius: 1em;
+  padding: 0.5em; }
+  .boton input:hover {
+    background-color: #792560;
+    color: #FFFFFF; }

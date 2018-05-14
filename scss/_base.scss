@@ -43,6 +43,7 @@ p {
 
 .header__menu_prodinterno {
 	list-style: none;
+	margin: $size / 2;
 }
 
 .foto {
@@ -100,7 +101,7 @@ p {
 	color: $color-menu-fuente;
 }
 
-.footer__copy_vermas {
+.footer__copy_volver {
 	font-size: 14px;
 	border: 2px solid $hover-menu;
 	border-radius: $size / 2;
@@ -111,7 +112,7 @@ p {
 	}
 }
 
-.footer__copy_vermas a {
+.footer__copy_volver a {
 	text-decoration: none;
 	&:hover {
 		color: $color-fondo;
