@@ -3,51 +3,80 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eiras Seguros - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Eiras Seguros | Home</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   </head>
   <body>
 
     <header class="header">
-      <h1 class="header__logo">Eiras Seguros</h1>
-      <nav class="header__menu">
-        <a href="index.html" target="_self">Home</a>
-        <a href="productos.html" target="_self">Productos</a>
-        <a href="datos_utiles.html" target="_self">Datos útiles</a>
-        <a href="siniestros.html" target="_self">Siniestros</a>
-        <a href="contacto.html" target="_self">Contacto</a>
+      <h1><img class="header__logo" src="../Eiras-Seguros/imgs/logo_GE.svg"></h1>
+      <nav>
+        <ul class="header__menu">
+          <li class="header__menu_home">
+            <a href="index.html" target="_self">Home</a>
+          </li>
+          <li class="header__menu_prod">
+            <a href="productos.html" target="_self">Productos</a>
+            <ul class="header__menu_prodinterno">
+              <li><a href="#">Automotores</a></li>
+              <li><a href="#">Hogar</a></li>
+              <li><a href="#">ART</a></li>
+              <li><a href="#">Cauciones</a></li>
+              <li><a href="#">Vida</a></li>
+              <li><a href="#">Riesgos diversos</a></li>
+            </ul>
+          </li>
+          <li class="header__menu_datos">
+            <a href="datos_utiles.html" target="_self">Datos útiles</a>
+          </li>
+          <li class="header__menu_siniestros">
+            <a href="siniestros.html" target="_self">Siniestros</a>
+          </li>
+          <li class="header__menu_contacto">
+            <a href="contacto.html" target="_self">Contacto</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <div class="foto foto__productos">
-        <div class="productos">
-        <a class="productos__car" href="#" target="_self"><i class="fas fa-car"></i><br/>Automotores</a>
-        <a class="productos__home" href="#" target="_self"><i class="fas fa-home"></i><br/>Hogar</a>
-        <a class="productos__work" href="#" target="_self"><i class="fas fa-building"></i><br/>ART</a>
-        <a class="productos__caucion" href="#" target="_self"><i class="fas fa-handshake"></i><br/>Cauciones</a>
-        <a class="productos__life" href="#" target="_self"><i class="fas fa-medkit"></i><br/>Vida</a>
-        <a class="productos__various" href="#" target="_self"><i class="fas fa-exclamation-circle"></i><br/>Varios</a>
+        <div class="prod">
+          <div class="prod__car">
+            <i class="fas fa-car icono"></i><br/><a class="prod__links" href="#" target="_self">Automotores</a>
+          </div>
+          <div class="prod__home">
+            <i class="fas fa-home icono"></i><a class="prod__links" href="#" target="_self"><br/>Hogar</a>
+          </div>
+          <div class="prod__work"><i class="fas fa-building icono"></i><a class="prod__links" href="#" target="_self"><br/>ART</a></div>
+          <div class="prod__caucion"><i class="fas fa-handshake icono"></i><a class="prod__links" href="#" target="_self"><br/>Cauciones</a></div>
+          <div class="prod__life"><i class="fas fa-medkit icono"></i><a class="prod__links" href="#" target="_self"><br/>Vida</a></div>
+          <div class="prod__various"><i class="fas fa-exclamation-circle icono"></i><a class="prod__links" href="#" target="_self"><br/>Riesgos diversos</a></div>
+        </div>
       </div>
-      </div>
-      
-
-      <div class="intro">
-        <h2 class="subtitle">Un poco de nosotros</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad beatae ducimus aliquid dolore. Repellat obcaecati dolorem quidem sequi sed esse dolor dignissimos deleniti nostrum vel! Mollitia culpa, qui distinctio.<br/>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad beatae ducimus aliquid dolore. Repellat obcaecati dolorem quidem sequi sed esse dolor dignissimos deleniti nostrum vel! Mollitia culpa, qui distinctio.
-        </p>
-      </div>
-
+      <section class="container">
+        <div class="nosotros">
+          <h2 class="subtitle">UN POCO DE NOSOTROS</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad beatae ducimus aliquid dolore. Repellat obcaecati dolorem quidem sequi sed esse dolor dignissimos deleniti nostrum vel! Mollitia culpa, qui distinctio.<br/>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad beatae ducimus aliquid dolore. Repellat obcaecati dolorem quidem sequi sed esse dolor dignissimos deleniti nostrum vel! Mollitia culpa, qui distinctio.
+          </p>
+        </div>
+        <div class="clientes">
+          <h2 class="subtitle">NUESTROS CLIENTES</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad beatae ducimus aliquid dolore. Repellat obcaecati dolorem quidem sequi sed esse dolor dignissimos deleniti nostrum vel! Mollitia culpa, qui distinctio.<br/>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad beatae ducimus aliquid dolore. Repellat obcaecati dolorem quidem sequi sed esse dolor dignissimos deleniti nostrum vel! Mollitia culpa, qui distinctio.
+          </p>
+        </div>
+      </section>
       <div class="contacto">
         <div class="contacto__ubicacion">
-          <h2>Ubicación</h2>
-          <p><span class="bold__contacto">Dirección:</span> Lavalle 643 - 7º "F"</p>
-          <p><span class="bold__contacto">Teléfono:</span> 4322-6602</p>
-          <p><span class="bold__contacto">Email:</span> <a href="mailto:info@eirasseguros.com.ar?subject=Consulta">info@eirasseguros.com.ar</a></p>
+          <h2 class="subtitle">UBICACIÓN</h2>
+          <p class="direccion"><i class="fas fa-map-marker-alt"></i>&nbsp;Lavalle 643 - 7º "F"</p>
+          <p class="telefono"><i class="fas fa-phone"></i>&nbsp;1143226602</p>
+          <p class="correo"><i class="fas fa-envelope"></i>&nbsp;<a class="contacto__email" href="mailto:info@eirasseguros.com.ar?subject=Consulta">info@eirasseguros.com.ar</a></p>
         </div>
         <div class="contacto__map">
           <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0773799323724!2d-58.37804068537602!3d-34.60220476492384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc40f66017%3A0x5e286036079f2d4!2sLavalle+643%2C+C1047AAM+CABA!5e0!3m2!1ses!2sar!4v1524505394519" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -56,18 +85,12 @@
           <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="imgs/SSN.jpg" alt="Superintendencia de Seguros de la Nación"></a>
         </div>
       </div>
-
       <footer class="footer">
         <div class="footer__copy">&copy; Copyright 2018 - Eiras Seguros - Todos los derechos reservados</div>
-        <div class="header__menu">
-          <a href="index.html" target="_self">Home</a>
-          <a href="productos.html" target="_self">Productos</a>
-          <a href="datos_utiles.html" target="_self">Datos útiles</a>
-          <a href="siniestros.html" target="_self">Siniestros</a>
-          <a href="contacto.html" target="_self">Contacto</a>
+        <div class="footer__copy_vermas">
+          <a href="index.html" target="_self">Volver arriba</a>
         </div>
       </footer>
-
     </main>
   </body>
 </html>
