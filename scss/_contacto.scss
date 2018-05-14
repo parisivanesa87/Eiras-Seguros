@@ -18,40 +18,39 @@
 	font-weight: bold;
 }
 
-.formulario {
-	width: 50%;
-}
-
-form {	
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.name_lastname, .email, .motivos {
-	height: $size * 3;
-	padding: $size;
-	border-radius: $size;
-	margin-bottom: $size;
-}
-
-.caja_comentarios {
-	height: $size * 10;
-	padding: $size;
-	border-radius: $size;
-	margin-bottom: $size;
-
-}
-
-.botones {
+.form {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+}
+.form_persona {
 	width: 100%;
-	margin-bottom: $size;
-	input {
-		margin: 0 $size;
+	background-color: $color-mapa;
+	border: 2px solid $hover-menu;
+	color: $color-menu-fuente;
+}
+
+.form_email {
+	width: 100%;
+	background-color: $color-mapa;
+	border: 2px solid $hover-menu;
+	color: $color-menu-fuente;
+}
+
+.form_asunto {
+	width: 100%;
+	background-color: $color-mapa;
+	border: 2px solid $hover-menu;
+	color: $color-menu-fuente;
+}
+
+.boton input {
+	color: $color-menu-fuente;
+	font-size: $size;
+	border: 2px solid $hover-menu;
+	border-radius: $size;
+	padding: $size / 2;
+	&:hover {
+		background-color: $hover-menu;
+		color: $color-fondo;
 	}
 }

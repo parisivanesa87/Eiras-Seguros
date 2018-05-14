@@ -1,22 +1,21 @@
 .datosutiles {
 	width: 100%;
 	display: flex;
-	padding: $size; 
+	padding: $size * 3; 
 }
 
-.datosutiles__companias {
+.datosutiles__telefonos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 50%;
 }
 
 .allianz, .fedpatronal, .SMG, .asociart {
-    padding: $size;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    line-height: $size * 1.5;
+    padding-left: $size;
 }
 
 .allianz__logo:hover {
@@ -30,6 +29,9 @@
 .SMG__logo:hover {
 	filter: grayscale(100%);
 }
+.titulos {
+	padding: $size;
+}
 
 .asociart__logo:hover {
 	filter: grayscale(100%);
@@ -37,13 +39,14 @@
 
 .contactanos {
 	width: 50%;
+	height: $size * 12;
 	background-color: $color-mapa;
 }
 
 .contactanos__texto {
 	margin: $size;
-	& a {
-		margin: $size / 2;
+	& p {
+		color: #000;
 	}
 }
 
