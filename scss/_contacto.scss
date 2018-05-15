@@ -1,7 +1,7 @@
 .contactar {
 	width: 100%;
 	display: flex;
-	flex-direction: space-between;
+	justify-content: center;
 	padding: $size; 
 	background-color: $color-mapa;
 }
@@ -10,47 +10,45 @@
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-    justify-content: space-between;
 }
 
-.contactar__info_bold {
-	color: $primary-color-dark;
-	font-weight: bold;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.form {
+.form__datos {
 	display: flex;
 	flex-direction: column;
 }
-.form_persona {
-	width: 100%;
-	background-color: $color-mapa;
-	border: 2px solid $hover-menu;
-	color: $color-menu-fuente;
-}
 
-.form_email {
-	width: 100%;
-	background-color: $color-mapa;
-	border: 2px solid $hover-menu;
-	color: $color-menu-fuente;
-}
-
-.form_asunto {
-	width: 100%;
-	background-color: $color-mapa;
-	border: 2px solid $hover-menu;
-	color: $color-menu-fuente;
-}
-
-.boton input {
-	color: $color-menu-fuente;
-	font-size: $size;
-	border: 2px solid $hover-menu;
+.form__nombre, .form__apellido, .form__email, .form__asunto_input {
+	border: 0;
+	outline: 0;
+	padding: $size;
 	border-radius: $size;
-	padding: $size / 2;
+	font-family: $font;
+	color: $color-menu-fuente;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	margin: $size / 2;
+	&:focus {
+		box-shadow: 0 0px 2px $hover-menu;
+	}
+}
+.form__asunto_input {
+	width: 465px;
+    height: 80px;
+}
+
+.form__btn {
+	border: 0;
+	outline: 0;
+	padding: $size;
+	border-radius: $size;
+	font-family: $font;
+	color: $color-fondo;
+	background: $hover-menu;
 	&:hover {
-		background-color: $hover-menu;
-		color: $color-fondo;
+		box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
 	}
 }

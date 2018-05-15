@@ -221,48 +221,46 @@ p {
 .contactar {
   width: 100%;
   display: flex;
-  flex-direction: space-between;
+  justify-content: center;
   padding: 1em;
   background-color: #EEEEEE; }
 
 .contactar__info {
   width: 50%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
 
-.contactar__info_bold {
-  color: #0288D1;
-  font-weight: bold; }
-
-.form {
+form {
   display: flex;
   flex-direction: column; }
 
-.form_persona {
-  width: 100%;
-  background-color: #EEEEEE;
-  border: 2px solid #792560;
-  color: #0d2560; }
+.form__datos {
+  display: flex;
+  flex-direction: column; }
 
-.form_email {
-  width: 100%;
-  background-color: #EEEEEE;
-  border: 2px solid #792560;
-  color: #0d2560; }
-
-.form_asunto {
-  width: 100%;
-  background-color: #EEEEEE;
-  border: 2px solid #792560;
-  color: #0d2560; }
-
-.boton input {
-  color: #0d2560;
-  font-size: 1em;
-  border: 2px solid #792560;
+.form__nombre, .form__apellido, .form__email, .form__asunto_input {
+  border: 0;
+  outline: 0;
+  padding: 1em;
   border-radius: 1em;
-  padding: 0.5em; }
-  .boton input:hover {
-    background-color: #792560;
-    color: #FFFFFF; }
+  font-family: "Lato", sans-serif;
+  color: #0d2560;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 0.5em; }
+  .form__nombre:focus, .form__apellido:focus, .form__email:focus, .form__asunto_input:focus {
+    box-shadow: 0 0px 2px #792560; }
+
+.form__asunto_input {
+  width: 465px;
+  height: 80px; }
+
+.form__btn {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 1em;
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  background: #792560; }
+  .form__btn:hover {
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6); }
