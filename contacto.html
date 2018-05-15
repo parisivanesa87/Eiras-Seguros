@@ -33,35 +33,22 @@
 
         <aside>
           <h2 class="subtitle">ENVIÁNOS TU CONSULTA</h2>
-          <form class="form" action="mail.php" method="POST">
-
-            <div>
-                <input class="form_persona" type="text" id="nombre_apellido" name="nombre_apellido" placeholder="Nombre y apellido">
-            </div>
-
-            <div>
-                <input class="form_email" type="email" name="email" placeholder="tuemail@email.com" required />
-            </div>
-
-            <div class="form_motivo">
-              <label>Motivo de consulta:</label> 
-              <select name="Motivo" required>
-                <option value="Consulta">Consulta</option>
-                <option value="Denuncia">Denuncia</option>
-                <option value="Sugerencia">Sugerencia</option>
-              </select>
-            </div>
-
-            <div>
-                <textarea class="form_asunto" id="asunto" name="asunto" placeholder="Escriba su motivo" style="height:200px">
-                </textarea>
+          <div class="formulario">
+            <div class="form">
+            <form action="mail.php" method="POST">
+              <div class="form__datos">
+                <input class="form__nombre" type="text" id="input-text" name="nombre" placeholder="Nombre" required>
+                <input class="form__apellido" type="text" id="input-text" name="apellido" placeholder="Apellido" required>
+                <input class="form__email" type="email" id="input-email" name="email" placeholder="Dirección de email" required>
               </div>
-            </div>
-
-            <div class="boton">
-              <input type="submit" value="Enviar">
-            </div>
+              <div class="form__asunto">
+                <textarea class="form__asunto_input" name="asunto" type="text" id="input-textarea" placeholder="Escriba su consulta" required></textarea>
+              </div>
+              <input class="form__btn" type="submit" value="Enviar" id="input-submit">
+         
           </form>
+           </div>
+          </div>
         </aside>
 
       </section>
