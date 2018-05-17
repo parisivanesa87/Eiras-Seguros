@@ -1,16 +1,47 @@
-.pasos {
-	padding: $size;
 
+section h2 {
+	margin-left: $size / 2;
 }
 
-.pasos__bold {
-	font-weight: bold;
-	color: $primary-color-dark;
+.pasos {
+	display: flex;
+	flex-direction: row;
+	padding: $size 0 $size 0;
+}
+
+.pasos__uno {
+	width: 50%;
+	border-right: solid 3px $hover-menu;
+	padding: $size;
+	& h3 {
+		text-align: center;
+		color: $hover-menu;
+		margin-bottom: $size / 2;
+	}	
+}
+
+.pasos__dos {
+	width: 50%;
+	border-right: solid 3px $hover-menu;
+	padding: $size;
+	& h3 {
+		text-align: center;
+		color: $hover-menu;
+		margin-bottom: $size / 2;
+	}	
+}
+
+.pasos__tres {
+	width: 50%;
+	padding: $size;
+	& h3 {
+		text-align: center;
+		color: $hover-menu;
+		margin-bottom: $size / 2;
+	}	
 }
 
 .pasos__listado {
-	padding-left: $size * 2;
-	list-style-type:lower-latin;
+	color: $tipografia;
+	margin: $size / 2;
 }
-
-

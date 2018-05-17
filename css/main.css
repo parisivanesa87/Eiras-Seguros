@@ -10,32 +10,49 @@ p {
   color: #999999; }
 
 .header {
-  padding: 1em;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   background: #FFFFFF; }
 
 .header__logo {
-  height: 45px; }
+  height: 1.5em; }
+
+.main-nav {
+  margin: 1em; }
 
 .header__menu {
   width: 100%;
   list-style: none;
+  max-width: 600px;
   display: flex;
-  flex-direction: row;
-  padding: 1em; }
+  overflow: hidden; }
   .header__menu a {
     padding: 1em;
     color: #0d2560;
     text-decoration: none; }
-    .header__menu a:hover {
-      padding-bottom: 1.8em;
-      border-bottom: solid 4px #792560; }
 
-.header__menu_prodinterno {
+.header__menu_item:hover {
+  padding-bottom: 1.5em;
+  border-bottom: solid 4px #792560; }
+
+.header__submenu {
+  display: none;
+  position: absolute;
+  opacity: 0.7; }
+
+.header__menu_item-child:hover > .header__submenu {
+  display: block; }
+
+.submenu__item, .submenu__item_riesgo {
+  padding: 1em 0 1em 0;
   list-style: none;
-  margin: 0.5em; }
+  font-size: 1em;
+  background-color: #FFFFFF;
+  border-bottom: solid 2px #792560; }
+
+.submenu__item_riesgo {
+  border-bottom: 0; }
 
 .foto {
   background-image: url("../imgs/institucional.jpg");
@@ -207,16 +224,43 @@ p {
   .contactanos__texto p {
     color: #000; }
 
-.pasos {
-  padding: 1em; }
+section h2 {
+  margin-left: 0.5em; }
 
-.pasos__bold {
-  font-weight: bold;
-  color: #0288D1; }
+.pasos {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 0 1em 0; }
+
+.pasos__uno {
+  width: 50%;
+  border-right: solid 3px #792560;
+  padding: 1em; }
+  .pasos__uno h3 {
+    text-align: center;
+    color: #792560;
+    margin-bottom: 0.5em; }
+
+.pasos__dos {
+  width: 50%;
+  border-right: solid 3px #792560;
+  padding: 1em; }
+  .pasos__dos h3 {
+    text-align: center;
+    color: #792560;
+    margin-bottom: 0.5em; }
+
+.pasos__tres {
+  width: 50%;
+  padding: 1em; }
+  .pasos__tres h3 {
+    text-align: center;
+    color: #792560;
+    margin-bottom: 0.5em; }
 
 .pasos__listado {
-  padding-left: 2em;
-  list-style-type: lower-latin; }
+  color: #999999;
+  margin: 0.5em; }
 
 .contactar {
   width: 100%;
