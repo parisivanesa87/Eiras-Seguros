@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eiras Seguros | Contacto</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   </head>
   <body>
     <header class="header">
       <h1><img class="header__logo" src="../Eiras-Seguros/imgs/logo_GE.svg"></h1>
-      
-<nav class="main-nav">
-  <ul class="header__menu">
-    <li class="header__menu_item"><a href="index.html">Home</a></li>
-    <li class="header__menu_item-child"><a href="#">Productos</a>
-      <ul class="header__submenu">
-        <li class="submenu__item"><a href="#">Automotores</a></li>
-        <li class="submenu__item"><a href="#">Hogar</a></li>
-        <li class="submenu__item"><a href="#">ART</a></li>
-        <li class="submenu__item"><a href="#">Cauciones</a></li>
-        <li class="submenu__item"><a href="#">Vida</a></li>
-        <li class="submenu__item_riesgo"><a href="#">Riesgos diversos</a></li>
-      </ul>
-    </li>
-    <li class="header__menu_item"><a href="datos_utiles.html">Datos útiles</a></li>
-    <li class="header__menu_item"><a href="siniestros.html">Siniestros</a></li>
-    <li class="header__menu_item"><a href="contacto.html">Contacto</a></li>
-  </ul>
-</nav>
+      <nav class="main-nav">
+        <ul class="header__menu">
+          <li class="header__menu_item"><a href="index.html">Home</a></li>
+          <li class="header__menu_item-child">
+            <a href="#">Productos</a>
+            <ul class="header__submenu">
+              <li class="submenu__item"><a href="../Eiras-Seguros/productos/automotores.html">Automotores</a></li>
+              <li class="submenu__item"><a href="../Eiras-Seguros/productos/hogar.html">Hogar</a></li>
+              <li class="submenu__item"><a href="../Eiras-Seguros/productos/ART.html">ART</a></li>
+              <li class="submenu__item"><a href="../Eiras-Seguros/productos/cauciones.html">Cauciones</a></li>
+              <li class="submenu__item"><a href="../Eiras-Seguros/productos/vida.html">Vida</a></li>
+              <li class="submenu__item_riesgo"><a href="../Eiras-Seguros/productos/riesgos_diversos.html">Riesgos diversos</a></li>
+            </ul>
+          </li>
+          <li class="header__menu_item"><a href="datos_utiles.html">Datos útiles</a></li>
+          <li class="header__menu_item"><a href="siniestros.html">Siniestros</a></li>
+          <li class="header__menu_item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="mapa">
@@ -42,29 +42,25 @@
           <p class="telefono"><i class="fas fa-phone"></i>&nbsp;1143226602</p>
           <p class="cor reo"><i class="fas fa-envelope"></i>&nbsp;<a class="contacto__email" href="mailto:info@eirasseguros.com.ar?subject=Consulta">info@eirasseguros.com.ar</a></p>
         </div>
-
         <aside>
           <h2 class="subtitle">ENVIÁNOS TU CONSULTA</h2>
           <div class="formulario">
             <div class="form">
-            <form action="mail.php" method="POST">
-              <div class="form__datos">
-                <input class="form__nombre" type="text" id="input-text" name="nombre" placeholder="Nombre" required>
-                <input class="form__apellido" type="text" id="input-text" name="apellido" placeholder="Apellido" required>
-                <input class="form__email" type="email" id="input-email" name="email" placeholder="Dirección de email" required>
-              </div>
-              <div class="form__asunto">
-                <textarea class="form__asunto_input" name="asunto" type="text" id="input-textarea" placeholder="Escriba su consulta" required></textarea>
-              </div>
-              <input class="form__btn" type="submit" value="Enviar" id="input-submit">
-         
-          </form>
-           </div>
+              <form action="mail.php" method="POST">
+                <div class="form__datos">
+                  <input class="form__nombre" type="text" id="input-text" name="nombre" placeholder="Nombre" required>
+                  <input class="form__apellido" type="text" id="input-text" name="apellido" placeholder="Apellido" required>
+                  <input class="form__email" type="email" id="input-email" name="email" placeholder="Dirección de email" required>
+                </div>
+                <div class="form__asunto">
+                  <textarea class="form__asunto_input" name="asunto" type="text" id="input-textarea" placeholder="Escriba su consulta" required></textarea>
+                </div>
+                <input class="form__btn" type="submit" value="Enviar" id="input-submit">
+              </form>
+            </div>
           </div>
         </aside>
-
       </section>
-
       <footer class="footer">
         <div class="footer__copy">&copy; Copyright 2018 - Eiras Seguros - Todos los derechos reservados</div>
         <div class="footer__copy_volver">

@@ -44,7 +44,7 @@ p {
 .submenu__item, .submenu__item_riesgo {
   padding: 1em 0 1em 0;
   list-style: none;
-  font-size: 1em;
+  font-size: 13px;
   background-color: #FFFFFF;
   border-bottom: solid 2px #792560; }
 
@@ -160,24 +160,6 @@ p {
   text-decoration: none; }
   .prod__links :hover {
     color: #FFFFFF; }
-
-.producto {
-  display: flex;
-  flex-flow: row wrap;
-  line-height: 2em;
-  justify-content: center; }
-  .producto a {
-    text-decoration: none; }
-
-.producto__car, .producto__home, .producto__work, .producto__caucion, .producto__life, .producto__various {
-  width: 20em;
-  border-radius: 1em;
-  margin: 1em;
-  text-align: center;
-  padding: 1em;
-  background-color: #90a4ae; }
-  .producto__car:hover, .producto__home:hover, .producto__work:hover, .producto__caucion:hover, .producto__life:hover, .producto__various:hover {
-    background-color: #C5CAE9; }
 
 .datosutiles {
   width: 100%;
@@ -305,3 +287,51 @@ form {
   background: #792560; }
   .form__btn:hover {
     box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6); }
+
+.automotores__parallax {
+  background-image: url("../imgs/automotores.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hogar__parallax {
+  background-image: url("../imgs/hogar.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.ART__parallax {
+  background-image: url("../imgs/trabajo.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.cauciones__parallax {
+  background-image: url("../imgs/cauciones.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.vida__parallax {
+  background-image: url("../imgs/vida.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.riesgosdiversos__parallax {
+  background-image: url("../imgs/riesgos_diversos.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
