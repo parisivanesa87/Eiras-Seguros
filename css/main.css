@@ -136,17 +136,13 @@ p {
   justify-content: center;
   line-height: 4em;
   width: 100%;
-  margin-bottom: -5em; }
-  .prod :hover {
-    background-color: #792560;
-    color: #FFFFFF; }
+  margin-bottom: -5em;
+  list-style-type: none; }
 
 .icono {
   font-size: 2em;
   text-align: center;
   color: #792560; }
-  .icono :hover {
-    color: #FFFFFF; }
 
 .prod__car, .prod__home, .prod__work, .prod__caucion, .prod__life, .prod__various {
   height: 9em;
@@ -158,8 +154,6 @@ p {
 
 .prod__links {
   text-decoration: none; }
-  .prod__links :hover {
-    color: #FFFFFF; }
 
 .datosutiles {
   width: 100%;
