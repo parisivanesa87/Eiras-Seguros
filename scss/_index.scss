@@ -29,19 +29,13 @@
 	line-height: $size * 4;
 	width: 100%;
     margin-bottom: -5em;
-    & :hover {
-		background-color: $hover-menu;
-		color: $color-fondo;
-	}
+    list-style-type: none;
 }
 
 .icono {
 	font-size: $size * 2;
 	text-align: center;
 	color: $hover-menu;
-	& :hover {
-		color: $color-fondo;
-	}
 }
 
 .prod__car, .prod__home, .prod__work, .prod__caucion, .prod__life, .prod__various {
@@ -55,7 +49,4 @@
 
 .prod__links {
 	text-decoration: none;
-	 & :hover {
-	 	color: $color-fondo;
-	 }
 }
